@@ -1,0 +1,62 @@
+{
+  "name": "planningpoker",
+  "version": "0.0.1",
+  "author": {
+    "url": "https://github.com/topicusoverheid",
+    "name": "Topicus Overheid",
+    "email": "info@topicusoverheid.nl"
+  },
+  "repository": {
+    "url": "https://github.com/topicusoverheid/planningpoker"
+  },
+  "description": "Planning Poker webapp based on React and PeerJS",
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "14.14.10",
+    "@types/react": "^17.0.0",
+    "@types/react-countup": "^4.3.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/react-router-bootstrap": "^0.24.5",
+    "@types/uuid": "^8.3.0",
+    "bootstrap": "^4.5.3",
+    "peerjs": "^1.3.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.1",
+    "react-full-screen": "^0.3.1",
+    "react-icons": "^4.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-peer": "https://github.com/topicusoverheid/react-peer#expose-peer-connection",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.1.2",
+    "uuid": "^8.3.1"
+  },
+  "scripts": {
+    "start": "HTTPS=true react-scripts start",
+    "postinstall": "cd node_modules/react-peer && yarn build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
