@@ -37,7 +37,7 @@
   "scripts": {
     "start": "HTTPS=true react-scripts start",
     "postinstall": "cd node_modules/react-peer && yarn build",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
