@@ -58,18 +58,18 @@ function StateView({peerId, state, onSelectPoints}: Props) {
             </h2>
             <div className="d-flex justify-content-center">
                 {state.users.map((user, index) =>
-                    <div key={index} className="img-thumbnail" style={{width: 128}} title={user.name}>
-                        <h6 className="text-center text-muted">
+                    <div key={index} className="d-flex flex-column align-items-center img-thumbnail mx-1 px-3" title={user.name}>
+                        <h6 className="text-muted">
                             {typeof user.points === "number" ? <CountUp end={user.points}/> : (user.voted ? '!!!' : '???')}
                         </h6>
-                        <div className="d-flex justify-content-center">
+                        <div>
                             {user.voted ?
-                                <FaUserCheck className={user.voted ? 'text-primary' : 'text-danger'} size="80%" />
+                                <FaUserCheck className={user.voted ? 'text-primary' : 'text-danger'} size="64" />
                                 :
-                                <FaUserTimes className={user.voted ? 'text-primary' : 'text-danger'} size="80%" />
+                                <FaUserTimes className={user.voted ? 'text-primary' : 'text-danger'} size="64" />
                             }
                         </div>
-                        <h5 className="text-center text-truncate">{user.name}</h5>
+                        <h5>{user.name}</h5>
                     </div>
                 )}
             </div>

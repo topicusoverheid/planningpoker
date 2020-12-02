@@ -96,6 +96,10 @@ function PokerAdmin({match, history, location}: Props) {
     }, [mapUsers, setPartialState]);
 
     useEffect(() => {
+        setVotes({});
+    }, [subject]);
+
+    useEffect(() => {
         setPartialState({sharingScreen: stream != null})
     }, [stream]);
 
@@ -115,6 +119,10 @@ function PokerAdmin({match, history, location}: Props) {
                     if (data && 'points' in data) {
                         updatePoints(conn.peer, data.points);
                     }
+                });
+
+                conn.on('close', function () {
+                    setPartialState({users: mapUsers()});
                 });
             }
         })
