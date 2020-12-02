@@ -26,7 +26,7 @@ function Home({history}: Props) {
             }}>
                 <Form.Group>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control placeholder="Name" aria-label="Name" minLength={3} maxLength={255} isValid={name.length >= 3} value={name}
+                    <Form.Control placeholder="Name" aria-label="Name" required minLength={3} maxLength={255} isValid={name.length >= 3} value={name}
                                   onChange={event => {
                                       setName(event.target.value);
                                   }} />
@@ -42,7 +42,7 @@ function Home({history}: Props) {
                 <Form.Group>
                     <Form.Label>Session ID</Form.Label>
                     <InputGroup>
-                        <Form.Control placeholder="Session ID" aria-label="Session ID" minLength={8} maxLength={255}
+                        <Form.Control placeholder="Session ID" aria-label="Session ID" required minLength={8} maxLength={255}
                                       isValid={sessionId.length >= 8} value={sessionId}
                                       onChange={event => {
                                           setSessionId(event.target.value);
