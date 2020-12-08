@@ -9341,7 +9341,7 @@ react-overlays@^4.1.0:
 
 "react-peer@https://github.com/topicusoverheid/react-peer#expose-peer-connection":
   version "0.2.6"
-  resolved "https://github.com/topicusoverheid/react-peer#bd22938cc3b6f49ae98d3f874276f96d93b108ed"
+  resolved "https://github.com/topicusoverheid/react-peer#b05531334d1d5bc569472794266beec1baf41cc6"
   dependencies:
     peerjs "^0.3.18"
 
